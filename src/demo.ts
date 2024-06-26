@@ -8,10 +8,9 @@ class AppController {
   getRootRoute() {
     return 'hi! I am a single file nest-app';
   }
-
-  @Get('/bye')
-  getByeThere() {
-    return 'bye! nest-app';
+  @Get()
+  getHello(): string {
+    return 'Hello Word!';
   }
 }
 
